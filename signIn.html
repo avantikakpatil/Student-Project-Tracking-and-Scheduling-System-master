@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signIn.css">
+    <title>Sign In Page</title> 
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;">Sign In</h1>
+        <form action="php/signIn.php" method="post">
+            <div class="form-group">
+                <label for="Email">Email<br></label>
+                <input type="email" placeholder="Enter your College Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password<br></label>
+                <input type="password" placeholder="Enter your Password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="user-role" id="selectOptions">Continue as:<br></label>
+                <select name="userRole">
+                    <option selected>Choose...</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Subject Incharge">Subject Incharge</option>
+                    <option value="Mentor">Mentor</option>
+                    <option value="Student">Student</option>
+                    <option value="Evaluator">Evaluator</option>
+                </select>
+            </div>
+            <div class="center"><button type="submit">Sign In</button></div>
+        </form>
+
+        <p style="text-align:center;"><small>OR</small></p>
+        <button class="SignInWithGoggle" class="center" id="googleSignInButton" style="vertical-align:middle;">
+        <img src="assests/images/google.png" alt="Google img" style="width:20px; height:20px; text-align:justify; vertical-align:middle; padding: 5px;">Sign in with Google</button>
+    </div>
+</body>
+</html>

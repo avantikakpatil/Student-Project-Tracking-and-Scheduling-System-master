@@ -1,0 +1,42 @@
+.meeting-request-form {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.scheduled-meetings {
+    margin-top: 20px;
+}
+
+/* Add styles for the notification panel */
+.notification-panel {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    border: 1px solid #d6d8db;
+    display: none;
+    z-index: 1000;
+}
+
+.notification-message {
+margin-bottom: 10px;
+padding: 8px;
+border: 1px solid #155724; 
+border-radius: 6px;
+color: black;
+background-color: white;
+}
+
+.view-all-btn {
+margin-top: 10px;
+cursor: pointer;
+color: #155724;
+}
+
+.view-all-btn:hover {
+color: blue;
+}
